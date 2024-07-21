@@ -17,7 +17,7 @@ main{
 
 header{
     display: flex;
-    margin-bottom: 6%;
+    margin: 1.5% auto;
 }
 header h1{
     margin: 0px;
