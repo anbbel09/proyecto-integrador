@@ -9,6 +9,7 @@
 body{
     margin: 0;
     box-sizing: border-box;
+    background-color: #F2F2F2;
 }
 main{
     width: 85vw;
@@ -34,51 +35,84 @@ nav a {
     margin: 30px;
     
 }
-
-
-
-p, ol, a{
-    font-family: var(--text);
-    font-weight: 400; 
-}
-
-h2, h3{
-    font-family: var(--subtitle);
-    font-weight: 700; 
-    background-color: #FCEE21;
-    padding: 5px;
-    display: inline-block;
-}
-.first-font{
+.title{
     font-family: var(--title);
-    
 }
 
-.text{
+.second-title{
+    font-family: var(--title);
+    font-size: 4rem;
+}
+
+.subtitle{
+
+    font-family: var(--subtitle);
+    font-size: 1.5rem;
+    padding: 3px;
+
+}
+
+p, li, a, h2, h1, h3, label, button{
     font-family: var(--text);
-    font-weight: 400;
+}
+
+.bg {
+    background-color: #FCEE21;
+}
+
+
+hr{
+    border: 1px solid;
 }
 
 #segundo-titulo{
     font-size: 2.9rem;
 }
-.inicio, .integrantes, .servicios{
+.inicio, .integrantes, .servicios, .contacto{
     margin: 40px auto;
+}
+
+.inicio{
+    display: flex;
+    justify-content: space-between;
+}
+.inicio #text {
+    
+    display: inline;
+    position: relative;
+    top: 20px;
+    font-size: 1.6rem;
+    font-weight: 400;
+    
+}
+.inicio #text2 {
+
+    font-size: 1.1rem;
+    font-weight: 400;
+    
+}
+.inicio figure{
+    width: 500px;
+    height: auto;
+}
+.inicio img {
+    width: 100%;
 }
 
 .inicio article {
     width: 50%;
+   
 }
 
 .inicio h1{
-    margin: 10px auto;
+    margin: 5px auto;
 }
 .inicio p{
-    margin: 5% 0;
-    width: 80%;
+    margin: 7% 0;
+    width: 70%;
 }
 .inicio h2{
-    font-size: 0.99rem;
+    font-size: 0.80rem;
     background-color: #FCEE21;
     padding-left: 10px;
     padding-right: 25px;
@@ -95,11 +129,85 @@ h2, h3{
 .integrantes article{
     width: 40%;
 }
+.servicios{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+}
+.servicios h2{
+    font-family: var(--subtitle);
+    font-size: 1.9rem;
+    
+}
+.servicios figure{
+    width: 450px;
+    height: auto;
+}
+.servicios img {
+    width: 100%;
+}
+.servicios article {
+    width: 40%;
+}
 .servicios ol {
     padding-left: 25px;
 }
 .servicios li {
     margin: 22px auto;
+}
+.servicios strong{
+    background-color: #FCEE21;
+    padding: 5px;
+ 
+    
+}
+.contacto{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.contacto form{
+    width: 500px;
+    display: flex;
+    flex-direction: column;
+}
+.contacto label, input, textarea{
+    display: block;
+    margin: 10px 0;
+}
+.contacto input, textarea {
+    width: 100%;
+}
+.contacto textarea{
+    height: 110px;
+}
+.contacto input{
+    height: 30px;
+}
+.btn-container{
+    border-style: none;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    margin: auto;
+    padding: 0;
+    
+}
+.btn{
+    background-color: #000;
+    color: white;
+    border-style: none;
+    padding: 10px 25px;
+    cursor: pointer;
+    font-size: 1rem;
+}
+.contacto p {
+    display: inline-block;
+    padding: 5px 15px;
+    font-weight: 700;
 }
 footer{
     width: 100%;
@@ -112,6 +220,16 @@ footer{
  padding: 20px;
 
 }
+.contacto h3 {
+    background-color: #000;
+    display: inline-block;
+    font-size: 2rem;
+    color: white;
+    margin: 5px;
+    padding: 5px 10px;
+
+}
+
 footer h1 {
     display: inline-block;
     margin: auto 25px auto auto;

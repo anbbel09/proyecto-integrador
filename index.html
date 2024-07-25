@@ -9,20 +9,18 @@
   <body>
     <main>
       <header>
-        <h1 class="first-font">wwwapas</h1>
+        <h1 class="title">wwwapas</h1>
         <nav>
           <a class="text" href="#servicios">Servicios</a>
           <a class="text" href="#contacto">Contacto</a>
-          <a class="text" href="#">Inicio</a>
+          <a class="text" href="#">Login</a>
         </nav>
       </header>
       <section class="inicio">
         <article>
-          <h1 class="text">
-            somos <br />
-            <strong id="segundo-titulo" class="first-font"> wwwapas </strong>
-          </h1>
-          <h2 class="text">Social media managers | creadoras de contenido</h2>
+          <h1 id="text" class="text">somos</h1>
+          <h1 class="second-title"><strong> wwwapas </strong></h1>
+          <h2 id="text2" class="text">Social media managers | creadoras de contenido</h2>
           <p>
             Nos encargamos de construir, gestionar y administrar la comunidad
             online de tu marca, empresa o negocio
@@ -31,12 +29,16 @@
             >
           </p>
         </article>
+
+        <figure>
+          <img src="/assets/img/img-inicio.png" alt="" srcset="">
+        </figure>
       
       </section>
-
+      <hr>
       <section class="integrantes">
         <article>
-          <h2 class="second-font">¡Hola! Somos SOFI & JULIA,</h2>
+          <h2 class="subtitle bg">¡Hola! Somos SOFI & JULIA,</h2>
           <p>
             las social media managers, las creadoras de contenido, las
             copywriters, las generadoras de leads, las diseñadoras, las
@@ -50,7 +52,7 @@
         </article>
 
         <article>
-          <h2 class="second-font">GESTIONAMOS TUS REDES SOCIALES</h2>
+          <h2 class="subtitle bg">GESTIONAMOS TUS REDES SOCIALES</h2>
 
           <p>
             La transformación digital no es solo para grandes compañías, todas
@@ -65,8 +67,11 @@
       </section>
       <hr />
       <section class="servicios">
+        <figure>
+          <img src="/assets/img/img-servicios.png" alt="" srcset="">
+        </figure>
         <article>
-          <h2 class="second-font">Servicios</h2>
+          <h2 class="subtitle">SERVICIOS</h2>
           <ol>
             <li>Análisis de perfil (Benchmarking)</li>
             <li>Revisión y activación de canales</li>
@@ -80,12 +85,28 @@
               Diagramamos un calendario que se ajuste a los objetivos de la
               empresa
             </li>
-            <li>¡Empezamos a comunicar</li>
+            <li class="last-child"> <strong>¡Empezamos a comunicar</strong></li>
           </ol>
-          <h3 class="second-font">¿Querés que nos contactemos con vos?</h3>
-          <p>Envianos tu consulta >></p>
         </article>
 
+      </section>
+      <hr>
+      <section class="contacto">
+        <article>
+          <h3 class="second-font">¿Querés que nos  </h3><br>
+          <h3 class="second-font"> contactemos con vos?</h3><br>
+          <p class="bg">Envianos tu consulta >></p>
+        </article>
+        <form action="">
+          <label class="text"><strong>Nombre</strong><input type="text" required></label>
+          <label class="text"><strong>Email</strong><input type="email" required></label>
+          <label class="text"><strong>Mensaje</strong><textarea name="" id="" required></textarea></label>
+          <fieldset class="btn-container">
+
+            <button class="btn"><strong>Enviar consulta</strong></button>
+            <button class="btn"><strong>Borrar</strong></button>
+          </fieldset>
+        </form>
       </section>
     </main>
     <footer>
