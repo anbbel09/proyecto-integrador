@@ -148,7 +148,7 @@ hr{
     width: 100%;
 }
 .servicios article {
-    width: 40%;
+    width: 39%;
 }
 .servicios ol {
     padding-left: 25px;
@@ -208,6 +208,32 @@ hr{
     display: inline-block;
     padding: 5px 15px;
     font-weight: 700;
+}
+.social{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    
+}
+.social article{
+    width: 90%;
+    margin:30px auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    
+}
+.social p {
+    text-align: start;
+    color: #808080;
+    
+}
+.social img {
+    width: 90px;
+    margin: 30px;
 }
 footer{
     width: 100%;
