@@ -184,7 +184,7 @@ hr{
 }
 
 .contacto form{
-    width: 500px;
+    width: 550px;
     display: flex;
     flex-direction: column;
 }
@@ -282,7 +282,7 @@ footer a {
 }
 
 /* medias celulares */
-@media (width <= 480px) {
+@media (width > 0) and (width < 480px) {
 
 
 header{
@@ -331,8 +331,103 @@ nav a {
     width: 100%;
  
 }
-.integrantes article {
+.integrantes {
     width: 100%;
 }
+.integrantes article {
+    width: 100%;
+   
+}
+.servicios{
+    width: 100%;
+}
+.servicios article{
+    width: 100%;
+    
+}
+.servicios figure {
+    margin: auto;
+}
+.servicios h2{
+    width: 100%;
+    padding: 0;
+    text-align: center;
+    
+}
+.servicios ol{
+    margin: auto;
+    width: 100%;
+    padding-left: 1px;
+    list-style-position: inside;
+    
+}
+.social img{
+
+    width: 75px;
+}
+.info{
+text-align: center;
+ width: 100%;
+ padding: 2px;
+ margin: 0;
+}
+.info a h1{
+    display: inline-block;
+    margin: 5px 0;
+}
+.info a {
+    font-size: 1rem;
 }
 
+.info h1{
+    font-size: 1rem;
+}
+
+}
+
+/* medidas tablets */
+
+@media(width > 480px) and ( width <= 1024px) {
+
+    .inicio article{
+        width: 40%;
+    }
+
+    .inicio figure{
+        width: 300px;
+        height: auto;
+        margin: auto 0 0 auto;
+    }
+
+    .integrantes article{
+    width: 45%;
+    }
+    
+    .servicios {
+        flex-wrap: nowrap;
+        
+    }
+    .servicios {
+        flex-wrap: nowrap;
+    }
+    .servicios figure {
+        width: 560px;
+        margin: auto;
+       
+    }
+
+    .contacto article {
+       width: 45%;
+    }
+    .contacto form {
+        width: 45%;
+    }
+    .social {
+        flex-wrap: nowrap;
+    }
+    .social article{
+
+        flex-wrap: nowrap;
+        margin: 0;
+    }
+}
