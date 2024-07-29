@@ -17,16 +17,22 @@ main{
 }
 
 header{
+    width: 100%;
     display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    flex-direction: row;
     margin: 1.5% auto;
 }
 header h1{
-    margin: 0px;
+
+   display: flex;
+   align-self: self-start;
 }
 nav {
-    width: 100%;
-    margin: auto;
-    text-align: end;
+
+    margin: auto 0;
+   
 }
 nav a {
     padding: 10px;
@@ -74,6 +80,8 @@ hr{
 
 .inicio{
     display: flex;
+    flex-wrap: wrap;
+    margin: auto;
     justify-content: space-between;
 }
 .inicio #text {
@@ -100,8 +108,8 @@ hr{
 }
 
 .inicio article {
-    width: 50%;
-   
+    width: 40%;
+    display: inline-block; 
 }
 
 .inicio h1{
@@ -109,7 +117,7 @@ hr{
 }
 .inicio p{
     margin: 7% 0;
-    width: 70%;
+    width: auto;
 }
 .inicio h2{
     font-size: 0.80rem;
@@ -120,16 +128,19 @@ hr{
     margin: 8px auto;
 }
 .integrantes{
-    width: 100%;
+    width: auto;
     display: flex;
+    flex-direction: row;
     justify-content: space-between;
-    
+    flex-wrap: wrap;
 }
 
 .integrantes article{
     width: 40%;
+  
 }
 .servicios{
+    width: 100%;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
@@ -141,14 +152,17 @@ hr{
     
 }
 .servicios figure{
-    width: 450px;
+    width: 455px;
     height: auto;
 }
 .servicios img {
     width: 100%;
 }
 .servicios article {
-    width: 39%;
+    width: auto;
+    margin-left: auto;
+    position: relative;
+    left: 20px;
 }
 .servicios ol {
     padding-left: 25px;
@@ -266,3 +280,59 @@ footer a {
     margin: auto auto auto 25px;
     
 }
+
+/* medias celulares */
+@media (width <= 480px) {
+
+
+header{
+    width: 100%;
+    margin: auto;
+    text-align: center;
+}
+header h1{
+    width: 100%;
+    display: block;
+   text-align: center;
+}
+nav {
+
+display: block;
+text-align: center;
+margin: auto;
+   
+}
+nav a {
+    margin: 0;
+    display: inline-block;
+    text-align: center;
+   
+}
+.inicio{
+    display: flex;
+    margin: auto;
+    justify-content: space-between;
+}
+.inicio #text {
+    display: block;
+    text-align: center;
+    
+
+}
+.inicio figure{
+    width: 700px;
+    height: auto;
+}
+.inicio img {
+    width: 100%;
+}
+
+.inicio article {
+    width: 100%;
+ 
+}
+.integrantes article {
+    width: 100%;
+}
+}
+
