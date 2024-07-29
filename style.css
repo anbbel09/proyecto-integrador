@@ -331,8 +331,47 @@ nav a {
     width: 100%;
  
 }
+/* .integrantes {
+    width: 100%;
+} */
 .integrantes article {
     width: 100%;
+   
 }
+.servicios{
+    width: 100%;
+}
+.servicios article{
+    width: 100%;
+    
+}
+.servicios figure {
+    margin: auto;
+}
+.servicios h2{
+    width: 100%;
+    padding: 0;
+    text-align: center;
+    
+}
+.servicios ol{
+    margin: auto;
+    width: 100%;
+    padding-left: 1px;
+    list-style-position: inside;
+    
+}
+.info{
+text-align: center;
+ width: 100%;
+ padding: 1px;
+ margin: 0;
+}
+.info a h1{
+    display: block;
+    margin: 5px 0;
+}
+
+
 }
 
